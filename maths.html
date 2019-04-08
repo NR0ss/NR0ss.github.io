@@ -3,10 +3,97 @@
 
     <head>
         <title>Maths</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+        <link rel="stylesheet" href="https://www.w3schools.com/lib/w3-theme-teal.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.3.0/css/font-awesome.min.css">
     </head>
 
     <body>
+        
+        <nav class="w3-sidebar w3-bar-block w3-card w3-animate-left w3-center" style="display:none" id="mySidebar">
+            <h1 class="w3-xxxlarge w3-text-theme">Side Navigation</h1>
+            <a href="./maths.html" class="w3-bar-item w3-button">Maths</a>
+            <a href="./comsci.html" class="w3-bar-item w3-button">Computer Science</a>
+            <a href="./physics.html" class="w3-bar-item w3-button">Physics</a>
+            <button class="w3-bar-item w3-button" onclick="w3_close()">Close <i class="fa fa-remove"></i></button>
+          </nav>
+
+        <header class="w3-container w3-theme w3-padding" id="myHeader">
+            <i onclick="w3_open()" class="fa fa-bars w3-xlarge w3-button w3-theme"></i> 
+            <div class="w3-center">
+            <h4>Nathan Rossbach</h4>
+            <h1 class="w3-xxxlarge">A Level Maths</h1>
+                <div class="w3-padding-32">
+                    <a href="https://filestore.aqa.org.uk/resources/mathematics/specifications/AQA-7357-SP-2017.PDF" target="_blank">
+                        <button class="w3-btn w3-xlarge w3-dark-grey w3-hover-light-grey" style="font-weight:900;">View Spec</button>
+                    </a>
+                </div>
+            </div>
+        </header>
+
+        <div class="w3-row w3-border">
+            <div class="w3-full w3-container w3-white w3-border">
+                <div class="w3-center">
+                    <h3>AS Level Pure</h3>  
+                    <p>The w3-half class uses half (50%) of the screen window.</p>
+                    <p>On small screens (max 600 pixels) it automatically resizes to full screen width.</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="w3-row w3-border">
+            <div class="w3-full w3-container w3-white w3-border">
+                <div class="w3-center">
+                    <h3>AS Level Mechanics</h3>  
+                    <p>The w3-half class uses half (50%) of the screen window.</p>
+                    <p>On small screens (max 600 pixels) it automatically resizes to full screen width.</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="w3-row w3-border">
+            <div class="w3-full w3-container w3-white w3-border">
+                <div class="w3-center">
+                    <h3>AS Level Stats</h3>  
+                    <p>The w3-half class uses half (50%) of the screen window.</p>
+                    <p>On small screens (max 600 pixels) it automatically resizes to full screen width.</p>
+                </div>
+            </div>
+        </div>
+
+        <br>
+
         <a href="./index.html">Go Back</a>
+
+
+
+
+
+
+
+
+
+
+
+
+        <script>
+            // Side navigation
+            function w3_open() {
+              var x = document.getElementById("mySidebar");
+              x.style.width = "100%";
+              x.style.fontSize = "40px";
+              x.style.paddingTop = "10%";
+              x.style.display = "block";
+            }
+            function w3_close() {
+              document.getElementById("mySidebar").style.display = "none";
+            }
+        </script>
+
+
+
     </body>
 
 </html>
