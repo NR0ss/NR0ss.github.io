@@ -1,5 +1,5 @@
 url: "nathanrossbach.com"
-baseurl: ""
+baseurl: "/a/"
 permalink: /:title/
 post_dirs: false
 masthead_title: "yes"
