@@ -2,3 +2,4 @@ plugins:
   - jekyll-redirect-from
 
 permalink: /:title/
+post_dirs: false
