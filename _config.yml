@@ -2,3 +2,4 @@ url: "nathanrossbach.com"
 baseurl: ""
 permalink: /:title/
 post_dirs: false
+masthead_title: "yes"
