@@ -3,11 +3,25 @@ a {
 }
 
 /* if desktop */
-.mobile_device_420px {
+.mobile_device_550px {
 	display: none;
 }
 
-@media only screen and (max-device-width: 420px) {
-   .mobile_device_420px{display: block;}
+@media only screen and (max-device-width: 550px) {
+   .mobile_device_550px{display: block;}
    .desktop {display: none;}
+}
+
+.button-container {
+  padding: 12px 24px;
+}
+
+button{
+	margin:auto;
+	display:block;
+
+}
+
+footer{
+	position:relative;
 }
