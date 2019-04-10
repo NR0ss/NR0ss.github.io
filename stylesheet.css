@@ -26,3 +26,7 @@ button{
 footer{
 	position:relative;
 }
+
+.cursor {
+	cursor: pointer;
+}
