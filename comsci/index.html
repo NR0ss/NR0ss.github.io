@@ -21,7 +21,34 @@
 
     <body>
 		
-		
+		<nav class="w3-sidebar w3-bar-block w3-card w3-animate-left w3-center" style="display:none" id="mySidebar">
+			<h1 class="w3-xxxlarge w3-text-theme">Side Navigation</h1>
+			<a href="../" class="w3-bar-item w3-button">Main Page</a>
+			<a href="../maths" class="w3-bar-item w3-button">Maths</a>
+			<a href="./" class="w3-bar-item w3-button">Computer Science</a>
+			<a href="../physics/" class="w3-bar-item w3-button">Physics</a>
+			<button class="w3-bar-item w3-button" onclick="w3_close()">Close <i class="fa fa-remove"></i></button>
+		</nav>
+				
+		<header class="w3-container w3-theme w3-padding" id="myHeader">
+			<i onclick="w3_open()" class="fa fa-bars w3-xlarge w3-button w3-theme"></i> 
+			<div class="w3-center">
+				<h4>Nathan Rossbach</h4>
+				<h1 class="w3-xxxlarge">A Level Computer Science</h1>						
+				<div class="w3-padding-8">
+					<a href="https://filestore.aqa.org.uk/resources/computing/specifications/AQA-7516-7517-SP-2015.PDF" target="_blank">
+						<button class="w3-btn w3-xlarge w3-dark-grey w3-hover-light-grey" style="font-weight:900;width:254px" >View Spec</button>
+					</a>
+				</div>	
+				<br>
+			</div>
+	
+		</header>
+
+
+		<br>
+
+
 
 
 
@@ -30,10 +57,7 @@
 		<footer class="w3-container w3-theme w3-padding-64">
 		
             <div class="desktop">
-				<div style="position:relative;bottom:35px;margin-left:-100000000px" class="w3-tooltip w3-right">	  
-					<a class="w3-text-white" href="#top"><span class="w3-xlarge">
-					<i class="fa fa-chevron-circle-up"></i></span></a>
-				</div>
+			
 				<div class="w3-center">	
 					<a href="../">
 						<button class="w3-btn w3-xlarge w3-dark-grey w3-hover-light-grey" style="font-weight:900;width:254px">Go Back</button>
@@ -51,6 +75,34 @@
 			</div>
 			
         </footer>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+		<script>
+				// Side navigation
+				function w3_open() {
+				  var x = document.getElementById("mySidebar");
+				  x.style.width = "100%";
+				  x.style.fontSize = "40px";
+				  x.style.paddingTop = "10%";
+				  x.style.display = "block";
+				}
+				function w3_close() {
+				  document.getElementById("mySidebar").style.display = "none";
+				}
+		</script>
+
 
     </body>
 
