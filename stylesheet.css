@@ -1,3 +1,13 @@
 a {
     text-decoration: none;
 }
+
+/* if desktop */
+.mobile_device_420px {
+	display: none;
+}
+
+@media only screen and (max-device-width: 420px) {
+   .mobile_device_420px{display: block;}
+   .desktop {display: none;}
+}
