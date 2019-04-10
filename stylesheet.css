@@ -8,9 +8,9 @@ a {
 }
 
 @media only screen and (max-device-width: 550px) {
-   .mobile_device_550px{display: block;}
+   .mobile_device_550px{display: block;position:relative;}
    .desktop {display: none;}
-   position:relative;
+   
 }
 
 .button-container {
