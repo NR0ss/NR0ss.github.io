@@ -12,7 +12,11 @@ a {
    .desktop {display: none;}
 
 }
+@media only screen and (max-device-width: 900px) {
+   .mobile_device_900px{display: block;position:relative;}
+   .desktop {display: none;}
 
+}
 .button-container {
   padding: 12px 24px;
 }
