@@ -47,7 +47,7 @@
 		<header class="w3-container w3-theme w3-padding" id="myHeader">
             <i onclick="w3_open()" class="fa fa-bars w3-xlarge w3-button w3-theme"></i> 
             <div class="w3-center">
-            <h4>Nathan Rossbach</h4>
+            <h4>NRTeach</h4>
             <h1 class="w3-xxxlarge">A Level Physics</h1>
                 <div class="w3-padding-8">
                     <a href="https://filestore.aqa.org.uk/resources/physics/AQA-7408-SDB.PDF" target="_blank">
@@ -64,11 +64,30 @@
             </div>
         </header>
 
-		
-		<br>
-		
-		
-		
+        
+        <a style="cursor:pointer" onclick="myAccFunc('Topic1')" id="openTopic1">
+			<div class="w3-row w3-border button">
+				<div class="w3-full w3-container w3-white w3-border w3-hover-light-grey">
+                    <div class="w3-center">
+                        <h3>Measurements and their errors</h3>
+                        <p>SI units, size prefixes, uncertainty</p>
+                        <p>Key words for practicals</p>
+                    </div>
+				</div>
+			</div>
+		</a>
+		<div id="Topic1" class="w3-hide">
+            <div class="w3-container w3-white" >
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                <iframe src="https://docs.google.com/presentation/d/e/2PACX-1vRr-05psXuYiv_U_qq8EuGa4LQUgBqV0YDClQKH_Tsy5zBirOhEpOSzxO0qINXre8rH8dLe6UubQevV/embed?start=false&loop=false&delayms=60000" frameborder="0" width="960" height="569" allowfullscreen="true" mozallowfullscreen="true" webkitallowfullscreen="true"></iframe>
+                <div class="w3-padding-16 w3-center">
+                    <a style="cursor:pointer" onclick="myAccFunc('Topic1')">
+                        <button class="w3-btn w3-xlarge w3-dark-grey w3-hover-light-grey" style="font-weight:900;width:254px" >Close Topic</button>
+                    </a>
+                
+                </div>
+            </div>
+        </div>
 		
 		
 		
@@ -102,6 +121,14 @@
             }
             function w3_close() {
               document.getElementById("mySidebar").style.display = "none";
+            }
+            function myAccFunc(id) {
+                var x = document.getElementById(id);
+                if (x.className.indexOf("w3-show") == -1) {
+                    x.className += " w3-show";
+                } else { 
+                    x.className = x.className.replace(" w3-show", "");
+                }
             }
         </script>
 		
