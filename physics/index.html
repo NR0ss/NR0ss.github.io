@@ -26,6 +26,8 @@
 			<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.3.0/css/font-awesome.min.css">
 			<link rel="stylesheet" href="../stylesheet.css">
 			
+			<script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+			<script src="functions.js"></script>
 			<style>
 			body {
 			background-color: #009688;
@@ -65,7 +67,7 @@
         </header>
 
         
-        <a style="cursor:pointer" onclick="myAccFunc('Topic1')" id="openTopic1">
+        <a style="cursor:pointer" onclick="myAccFunc('Errors');loadTopic('topic_errors','openErrors','Errors')" id="openErrors">
 			<div class="w3-row w3-border button">
 				<div class="w3-full w3-container w3-white w3-border w3-hover-light-grey">
                     <div class="w3-center">
@@ -76,22 +78,11 @@
 				</div>
 			</div>
 		</a>
-		<div id="Topic1" class="w3-hide">
-            <div class="w3-container w3-white w3-center" >
-                <p></p>
-                <iframe src="https://docs.google.com/presentation/d/e/2PACX-1vRr-05psXuYiv_U_qq8EuGa4LQUgBqV0YDClQKH_Tsy5zBirOhEpOSzxO0qINXre8rH8dLe6UubQevV/embed?start=false&loop=false&delayms=60000" frameborder="0" width="960" height="569" allowfullscreen="true" mozallowfullscreen="true" webkitallowfullscreen="true"></iframe>
-                <p></p>
-				<a target="_blank" style="color:blue" href="https://docs.google.com/presentation/d/1AHQ9C2nlsrYGRw57ZMm_bRF1HKchBRzKHDkTzbRNkFg/edit?usp=sharing"><u>Click here if you're on mobile</u></a>
-				<div class="w3-padding-16 w3-center">
-                    <a style="cursor:pointer" onclick="myAccFunc('Topic1')">
-                        <button class="w3-btn w3-xlarge w3-dark-grey w3-hover-light-grey" style="font-weight:900;width:254px" >Close Topic</button>
-                    </a>
-                
-                </div>
-            </div>
+		<div id="Errors" class="w3-hide">
+
         </div>
 		
-		<a style="cursor:pointer" onclick="myAccFunc('Topic2')" id="openTopic2">
+		<a style="cursor:pointer" onclick="myAccFunc('Particles');loadTopic('topic_particles','openParticles','Particles')" id="openParticles">
 			<div class="w3-row w3-border button">
 				<div class="w3-full w3-container w3-white w3-border w3-hover-light-grey">
                     <div class="w3-center">
@@ -102,22 +93,11 @@
 				</div>
 			</div>
 		</a>
-		<div id="Topic2" class="w3-hide">
-            <div class="w3-container w3-white w3-center" >
-                <p></p>
-                <iframe src="https://docs.google.com/presentation/d/e/2PACX-1vTTB8_VjWuxDCvs1olo21Uiyg2MO3Hn_QANaYd5xBfy9nJLBl8l-I4-ydQriDmQfNt-CkQTKBqWSKMB/embed?start=false&loop=false&delayms=60000" frameborder="0" width="960" height="569" allowfullscreen="true" mozallowfullscreen="true" webkitallowfullscreen="true"></iframe>
-                <p></p>
-				<a target="_blank" style="color:blue" href="https://docs.google.com/presentation/d/1amiqTRXip0HULbkz9h9Ar7DfYdMAOgF02dFkN4IfPrg/edit?usp=sharing"><u>Click here if you're on mobile</u></a>
-				<div class="w3-padding-16 w3-center">
-                    <a style="cursor:pointer" onclick="myAccFunc('Topic2')">
-                        <button class="w3-btn w3-xlarge w3-dark-grey w3-hover-light-grey" style="font-weight:900;width:254px" >Close Topic</button>
-                    </a>
-                
-                </div>
-            </div>
+		<div id="Particles" class="w3-hide">
+
         </div>
 		
-		<a style="cursor:pointer" onclick="myAccFunc('Topic3')" id="openTopic3">
+		<a style="cursor:pointer" onclick="myAccFunc('Quantum');loadTopic('topic_quantum','openQuantum','Quantum')" id="openQuantum">
 			<div class="w3-row w3-border button">
 				<div class="w3-full w3-container w3-white w3-border w3-hover-light-grey">
                     <div class="w3-center">
@@ -128,22 +108,11 @@
 				</div>
 			</div>
 		</a>
-		<div id="Topic3" class="w3-hide">
-            <div class="w3-container w3-white w3-center" >
-                <p></p>
-                <iframe src="https://docs.google.com/presentation/d/e/2PACX-1vR3cf9iB6SQSM5S2CiuYp_4pA90pyhcA92Ky9zNAS1S_zD_Dwa1cCGrurI7gn5PlDWQunGfKGu-JOkE/embed?start=false&loop=false&delayms=60000" frameborder="0" width="960" height="569" allowfullscreen="true" mozallowfullscreen="true" webkitallowfullscreen="true"></iframe>
-                <p></p>
-				<a target="_blank" style="color:blue" href="https://docs.google.com/presentation/d/18TNYJ8EGJb7cMw19BdfWGTLD3K50cSo5vDmdfLNvHAg/edit?usp=sharing"><u>Click here if you're on mobile</u></a>
-				<div class="w3-padding-16 w3-center">
-                    <a style="cursor:pointer" onclick="myAccFunc('Topic3')">
-                        <button class="w3-btn w3-xlarge w3-dark-grey w3-hover-light-grey" style="font-weight:900;width:254px" >Close Topic</button>
-                    </a>
-                
-                </div>
-            </div>
+		<div id="Quantum" class="w3-hide">
+
         </div>
 		
-		<a style="cursor:pointer" onclick="myAccFunc('Topic4')" id="openTopic4">
+		<a style="cursor:pointer" onclick="myAccFunc('Waves');loadTopic('topic_waves','openWaves','Waves')" id="openWaves">
 			<div class="w3-row w3-border button">
 				<div class="w3-full w3-container w3-white w3-border w3-hover-light-grey">
                     <div class="w3-center">
@@ -154,19 +123,8 @@
 				</div>
 			</div>
 		</a>
-		<div id="Topic4" class="w3-hide">
-            <div class="w3-container w3-white w3-center" >
-                <p></p>
-                <iframe src="https://docs.google.com/presentation/d/e/2PACX-1vRkf7QuUach7xydd2q4YN4mri12wAmDvfaI7v-EIUuVPnGjjYJRYEn4Ps9YCPR_of6t9kijU7huOY6f/embed?start=false&loop=false&delayms=60000" frameborder="0" width="960" height="569" allowfullscreen="true" mozallowfullscreen="true" webkitallowfullscreen="true"></iframe>
-                <p></p>
-				<a target="_blank" style="color:blue" href="https://docs.google.com/presentation/d/1hkshJZEix3H-uHatGcMOnzBvxoU-0ZIKNvqNKKfX1i0/edit?usp=sharing"><u>Click here if you're on mobile</u></a>
-				<div class="w3-padding-16 w3-center">
-                    <a style="cursor:pointer" onclick="myAccFunc('Topic4')">
-                        <button class="w3-btn w3-xlarge w3-dark-grey w3-hover-light-grey" style="font-weight:900;width:254px" >Close Topic</button>
-                    </a>
-                
-                </div>
-            </div>
+		<div id="Waves" class="w3-hide">
+
         </div>
 		
 		
@@ -178,7 +136,7 @@
 		
 		
 		
-		<a style="cursor:pointer" onclick="myAccFunc('Telescopes')" id="openTelescopes">
+		<a style="cursor:pointer" onclick="myAccFunc('Telescopes');loadTopic('topic_telescopes','openTelescopes', 'Telescopes')" id="openTelescopes">
 			<div class="w3-row w3-border button">
 				<div class="w3-full w3-container w3-white w3-border w3-hover-light-grey">
                     <div class="w3-center">
@@ -190,21 +148,10 @@
 			</div>
 		</a>
 		<div id="Telescopes" class="w3-hide">
-            <div class="w3-container w3-white w3-center" >
-                <p></p>
-                <iframe src="https://docs.google.com/presentation/d/e/2PACX-1vSkPmf_ugUZHxvCefAivgTqVH6qt4WDx9x4RWMQhr06L9EjOOULSsknjjz6sk7zkh54eKNt9U7pWhbg/embed?start=false&loop=false&delayms=60000" frameborder="0" width="960" height="569" allowfullscreen="true" mozallowfullscreen="true" webkitallowfullscreen="true"></iframe>
-                <p></p>
-				<a target="_blank" style="color:blue" href="https://docs.google.com/presentation/d/19oFHUlEFjrSQNYZdCSLInhDsNU-L3HfF3Il9D8e4M1M/edit?usp=sharing"><u>Click here if you're on mobile</u></a>
-				<div class="w3-padding-16 w3-center">
-                    <a style="cursor:pointer" onclick="myAccFunc('Telescopes')">
-                        <button class="w3-btn w3-xlarge w3-dark-grey w3-hover-light-grey" style="font-weight:900;width:254px" >Close Topic</button>
-                    </a>
-                
-                </div>
-            </div>
+
         </div>
 
-		<a style="cursor:pointer" onclick="myAccFunc('Stars')" id="openStars">
+		<a style="cursor:pointer" onclick="myAccFunc('Stars');loadTopic('topic_stars', 'openStars', 'Stars')" id="openStars">
 			<div class="w3-row w3-border button">
 				<div class="w3-full w3-container w3-white w3-border w3-hover-light-grey">
                     <div class="w3-center">
@@ -216,21 +163,10 @@
 			</div>
 		</a>
 		<div id="Stars" class="w3-hide">
-            <div class="w3-container w3-white w3-center" >
-                <p></p>
-                <iframe src="https://docs.google.com/presentation/d/e/2PACX-1vTP-Dtw9rN2maf1VTV1J7hpfHTV-1MGbs91OMInVp-JRhTZ_2WeY3BzfwcGRxb5mbLHByotUtw_j_Uf/embed?start=false&loop=false&delayms=60000" frameborder="0" width="960" height="569" allowfullscreen="true" mozallowfullscreen="true" webkitallowfullscreen="true"></iframe>
-                <p></p>
-				<a target="_blank" style="color:blue" href="https://docs.google.com/presentation/d/1JdQC882ri8Kx4d0K4laKWrOmxmmfF6ktiJwXYO2jMpI/edit?usp=sharing"><u>Click here if you're on mobile</u></a>
-				<div class="w3-padding-16 w3-center">
-                    <a style="cursor:pointer" onclick="myAccFunc('Stars')">
-                        <button class="w3-btn w3-xlarge w3-dark-grey w3-hover-light-grey" style="font-weight:900;width:254px" >Close Topic</button>
-                    </a>
-                
-                </div>
-            </div>
+            
         </div>
 
-		<a style="cursor:pointer" onclick="myAccFunc('Cosmology')" id="openCosmology">
+		<a style="cursor:pointer" onclick="myAccFunc('Cosmology');loadTopic('topic_cosmology','openCosmology', 'Cosmology')" id="openCosmology">
 			<div class="w3-row w3-border button">
 				<div class="w3-full w3-container w3-white w3-border w3-hover-light-grey">
                     <div class="w3-center">
@@ -242,21 +178,7 @@
 			</div>
 		</a>
 		<div id="Cosmology" class="w3-hide">
-            <div class="w3-container w3-white w3-center" >
-                <p></p>
-				
-				<button class="w3-btn w3-xlarge w3-dark-grey w3-hover-light-grey" onclick="document.getElementById('id01').style.display='block'" style="font-weight:900;">Topic Specification</button>
-				<br><br>
-                <iframe src="https://docs.google.com/presentation/d/e/2PACX-1vSuJGAjtw-4xfSENutRSI1bP8-EhQ8-Ont9iHyG-BCw4b8flzHAWnWgczPvXzAF2mWMOOwQBK_sgTb2/embed?start=false&loop=false&delayms=60000" frameborder="0" width="960" height="569" allowfullscreen="true" mozallowfullscreen="true" webkitallowfullscreen="true"></iframe>
-                <p></p>
-				<a target="_blank" style="color:blue" href="https://docs.google.com/presentation/d/1zFr6Yqb4SF_5FDl292G0KITClYYJP5rECtRNGxE3Q60/edit?usp=sharing"><u>Click here if you're on mobile</u></a>
-				<div class="w3-padding-16 w3-center">
-                    <a style="cursor:pointer" onclick="myAccFunc('Cosmology')">
-                        <button class="w3-btn w3-xlarge w3-dark-grey w3-hover-light-grey" style="font-weight:900;width:254px" >Close Topic</button>
-                    </a>
-                
-                </div>
-            </div>
+
         </div>
 
 
