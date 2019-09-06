@@ -68,7 +68,23 @@
             </div>
         </header>
 		
-		
+		<div id="warning" class="w3-modal w3-show">
+			<div class="w3-modal-content w3-card-4 w3-animate-top">
+				<header class="w3-container w3-theme-l1 w3-center"> 
+					<span onclick="document.getElementById('warning').style.display='none'"
+					class="w3-button w3-display-topright">×</span>
+					<h3>Please remember...</h3>
+				</header>
+				<div class="w3-padding w3-center">
+					<p>Maths requires a lot of problem solving and students prefer to revise in a variety of ways. Please don't use this as your only source of reviision but as guidance on what you should improve on. 
+					<br>
+					</p>
+				</div>
+				<footer class="w3-container w3-theme-l1 w3-center">
+					<p>NRTeach</p>
+				</footer>
+			</div>
+		</div>
 		
 		<a href="./pure/" style="text-decoration:none">
 			<div class="w3-row w3-border">
@@ -142,6 +158,14 @@
             }
             function w3_close() {
               document.getElementById("mySidebar").style.display = "none";
+            }
+			function myAccFunc(id) {
+                var x = document.getElementById(id);
+                if (x.className.indexOf("w3-show") == -1) {
+                    x.className += " w3-show";
+                } else { 
+                    x.className = x.className.replace(" w3-show", "");
+                }
             }
         </script>
 
