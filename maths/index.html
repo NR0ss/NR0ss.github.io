@@ -43,7 +43,7 @@
 
     <body>
         
-        <nav class="w3-sidebar w3-bar-block w3-card w3-animate-left w3-center" style="display:none" id="mySidebar">
+        <nav class="w3-sidebar w3-bar-block w3-card w3-animate-left w3-center side-navigation-close" id="mySidebar">
             <h1 class="w3-xxxlarge w3-text-theme">Side Navigation</h1>
             <a href="../" class="w3-bar-item w3-button">Main Page</a>
             <a href="./" class="w3-bar-item w3-button">Maths</a>
@@ -59,13 +59,13 @@
             <h1 class="w3-xxxlarge">A Level Maths</h1>
                 <div class="w3-padding-8">
                     <a href="https://filestore.aqa.org.uk/resources/mathematics/AQA-AS-A-MATHS-FORMULAE.PDF" target="_blank">
-                        <button class="w3-btn w3-xlarge w3-dark-grey w3-hover-light-grey" style="font-weight:900;width:254px">Formula Booklet</button>
+                        <button class="w3-btn w3-xlarge w3-dark-grey w3-hover-light-grey button-link">Formula Booklet</button>
                     </a>
                 </div>
 				
                 <div class="w3-padding-16">
                     <a href="https://filestore.aqa.org.uk/resources/mathematics/specifications/AQA-7357-SP-2017.PDF" target="_blank">
-                        <button class="w3-btn w3-xlarge w3-dark-grey w3-hover-light-grey" style="font-weight:900;width:254px" >View Spec</button>
+                        <button class="w3-btn w3-xlarge w3-dark-grey w3-hover-light-grey button-link">View Spec</button>
                     </a>
                 </div>
 				
@@ -93,7 +93,7 @@
 			<p>Unlike the other subjects, this is just a collection of resources that may help you practise and identify weak areas in Maths.</p>
 			<p>Maths requires a lot of problem solving and students prefer to revise in a variety of ways. Please don't use this as your only source of revision but as guidance on what you should improve on. </p>
 		</div>
-		<a style="cursor:pointer" onclick="myAccFunc('Resources')" id="openResources">
+		<a class="open-topic" onclick="myAccFunc('Resources')" id="openResources">
 			<div class="w3-row w3-border button">
 				<div class="w3-full w3-container w3-white w3-border w3-hover-light-grey">
 					<div class="w3-center">
@@ -107,23 +107,23 @@
 		<div id="Resources" class="w3-hide">
 			<div class="w3-container w3-white w3-center" >
 				<p></p>
-				<a href="https://www.drfrostmaths.com/" style="color: #0000EE; text-decoration: none;" target="_blank"><u>Dr Frost Maths</u></a>
+				<a href="https://www.drfrostmaths.com/" class="resources" target="_blank"><u>Dr Frost Maths</u></a>
 				<br>
-				<a href="https://www.physicsandmathstutor.com/maths-revision/" style="color: #0000EE; text-decoration: none;" target="_blank"><u>Physics and Maths tutor</u></a>
+				<a href="https://www.physicsandmathstutor.com/maths-revision/" class="resources" target="_blank"><u>Physics and Maths tutor</u></a>
 				<br>
-				<a href="https://undergroundmathematics.org/" style="color: #0000EE; text-decoration: none;" target="_blank"><u>Underground Maths</u></a>
+				<a href="https://undergroundmathematics.org/" class="resources" target="_blank"><u>Underground Maths</u></a>
 				<br>
-				<a href="https://nrich.maths.org/search/?search=a+level&tab=1&fs=101110000001111" style="color: #0000EE; text-decoration: none;" target="_blank"><u>NRICH</u></a>
+				<a href="https://nrich.maths.org/search/?search=a+level&tab=1&fs=101110000001111" class="resources" target="_blank"><u>NRICH</u></a>
 				<br>
-				<a href="https://www.desmos.com/calculator" style="color: #0000EE; text-decoration: none;" target="_blank"><u>Graphing with Desmos</u></a>
+				<a href="https://www.desmos.com/calculator" class="resources" target="_blank"><u>Graphing with Desmos</u></a>
 				<div class="w3-padding-16">
-					<a style="cursor:pointer" onclick="myAccFunc('Resources')">
-						<button class="w3-btn w3-xlarge w3-dark-grey w3-hover-light-grey" style="font-weight:900;width:254px">Close Resources</button>
+					<a class="open-topic" onclick="myAccFunc('Resources')">
+						<button class="w3-btn w3-xlarge w3-dark-grey w3-hover-light-grey button-link">Close Resources</button>
 					</a>
 				</div>
 			</div>
 		</div>
-		<a href="./pure/" style="text-decoration:none">
+		<a href="./pure/" class="no-under">
 			<div class="w3-row w3-border">
 				<div class="w3-full w3-container w3-white w3-border w3-hover-light-grey">
                     <div class="w3-center">
@@ -135,7 +135,7 @@
 			</div>
 		</a>
 		
-		<a href="./mechanics/" style="text-decoration:none">
+		<a href="./mechanics/" class="no-under">
 			<div class="w3-row w3-border">
 				<div class="w3-full w3-container w3-white w3-border w3-hover-light-grey">            
                     <div class="w3-center">
@@ -146,7 +146,7 @@
 				</div>
 			</div>
 		</a>
-		<a href="./stats/" style="text-decoration:none">
+		<a href="./stats/" class="no-under">
 			<div class="w3-row w3-border">
 				<div class="w3-full w3-container w3-white w3-border w3-hover-light-grey">               
                     <div class="w3-center">
@@ -165,10 +165,10 @@
 			
 			<div class="w3-center">	
 				<a href="../">
-					<button class="w3-btn w3-xlarge w3-dark-grey w3-hover-light-grey" style="font-weight:900;width:254px">Go Back</button>
+					<button class="w3-btn w3-xlarge w3-dark-grey w3-hover-light-grey button-link">Go Back</button>
 				</a><div class="mobile_device_550px"><p></p></div>
 				<a href="https://www.nrteach.com">
-					<button class="w3-btn w3-xlarge w3-dark-grey w3-hover-light-grey" style="font-weight:900;width:254px">Main Page</button>
+					<button class="w3-btn w3-xlarge w3-dark-grey w3-hover-light-grey button-link">Main Page</button>
 				</a>				
 			</div>
 		
@@ -187,14 +187,12 @@
         <script>
             // Side navigation
             function w3_open() {
-              var x = document.getElementById("mySidebar");
-              x.style.width = "100%";
-              x.style.fontSize = "40px";
-              x.style.paddingTop = "10%";
-              x.style.display = "block";
+				var x = document.getElementById("mySidebar");
+				x.className = x.className.replace(" side-navigation-close", " side-navigation-open");
             }
             function w3_close() {
-              document.getElementById("mySidebar").style.display = "none";
+				var x = document.getElementById("mySidebar");
+				x.className = x.className.replace(" side-navigation-open", " side-navigation-close");
             }
 			function myAccFunc(id) {
                 var x = document.getElementById(id);

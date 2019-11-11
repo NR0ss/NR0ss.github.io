@@ -44,7 +44,7 @@
 
     <body>
 
-        <nav class="w3-sidebar w3-bar-block w3-card w3-animate-left w3-center" style="display:none" id="mySidebar">
+        <nav class="w3-sidebar w3-bar-block w3-card w3-animate-left w3-center side-navigation-close" id="mySidebar">
             <h1 class="w3-xxxlarge w3-text-theme">Side Navigation</h1>
             <a href="./maths/" class="w3-bar-item w3-button">Maths</a>
             <a href="./comsci/" class="w3-bar-item w3-button">Computer Science</a>
@@ -67,7 +67,7 @@
         
 		    <div class="w3-third">
                 <a href="./physics/">
-                    <div class="w3-card w3-container" style="min-height:460px">
+                    <div class="w3-card w3-container icon">
                         <h2>Physics</h2><br>
                         <img src="./Icons/physics.png" alt="aqa a level physics">
 
@@ -77,7 +77,7 @@
 
 			<div class="w3-third">
                 <a href="./maths/">
-                    <div class="w3-card w3-container" style="min-height:460px">
+                    <div class="w3-card w3-container icon">
                         <h2>Maths</h2><br>
                         <img src="./Icons/maths.png" alt="aqa a level maths">
 
@@ -87,7 +87,7 @@
 
             <div class="w3-third">
                 <a href="./comsci/">
-                    <div class="w3-card w3-container" style="min-height:460px">
+                    <div class="w3-card w3-container icon">
                         <h2>Computer Science</h2><br>
                         <img src="./Icons/computer.png" alt="aqa a level computer science">
 
@@ -105,14 +105,12 @@
         <script>
             // Side navigation
             function w3_open() {
-              var x = document.getElementById("mySidebar");
-              x.style.width = "100%";
-              x.style.fontSize = "40px";
-              x.style.paddingTop = "10%";
-              x.style.display = "block";
+				var x = document.getElementById("mySidebar");
+				x.className = x.className.replace(" side-navigation-close", " side-navigation-open");
             }
             function w3_close() {
-              document.getElementById("mySidebar").style.display = "none";
+				var x = document.getElementById("mySidebar");
+				x.className = x.className.replace(" side-navigation-open", " side-navigation-close");
             }
         </script>
     </body>

@@ -54,6 +54,19 @@ footer{
 .side-navigation-close{
 	display:none
 }
+
 .link{
 	color:blue
+}
+
+.icon{
+	min-height:460px
+}
+
+.resources{
+	color: #0000EE; text-decoration: none
+}
+
+.no-under{
+	text-decoration:none
 }
