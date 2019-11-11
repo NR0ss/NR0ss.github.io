@@ -42,7 +42,7 @@
 
     <body>
 
-		<nav class="w3-sidebar w3-bar-block w3-card w3-animate-left w3-center" style="display:none" id="mySidebar">
+		<nav class="w3-sidebar w3-bar-block w3-card w3-animate-left w3-center side-navigation-close" id="mySidebar">
             <h1 class="w3-xxxlarge w3-text-theme">Side Navigation</h1>
             <a href="../maths/" class="w3-bar-item w3-button">Maths</a>
             <a href="../comsci/" class="w3-bar-item w3-button">Computer Science</a>
@@ -254,37 +254,16 @@
 
 
 
-
-
-
-	<div id="id01" class="w3-modal">
-		<div class="w3-modal-content w3-card-4 w3-animate-top">
-			<header class="w3-container w3-theme-l1 w3-center"> 
-				<span onclick="document.getElementById('id01').style.display='none'"
-				class="w3-button w3-display-topright">×</span>
-				<h3>What the AQA specification says</h3>
-			</header>
-				<div class="w3-padding w3-center">
-					<p>Cool huh? Ok, enough teasing around..</p>
-				</div>
-				<footer class="w3-container w3-theme-l1 w3-center">
-					<p>NRTeach</p>
-				</footer>
-			</div>
-		</div>
-		
 		
 		<script>
             // Side navigation
             function w3_open() {
-              var x = document.getElementById("mySidebar");
-              x.style.width = "100%";
-              x.style.fontSize = "40px";
-              x.style.paddingTop = "10%";
-              x.style.display = "block";
+				var x = document.getElementById("mySidebar");
+				x.className = x.className.replace(" side-navigation-close", " side-navigation-open");
             }
             function w3_close() {
-              document.getElementById("mySidebar").style.display = "none";
+				var x = document.getElementById("mySidebar");
+				x.className = x.className.replace(" side-navigation-open", " side-navigation-close");
             }
             function myAccFunc(id) {
                 var x = document.getElementById(id);
