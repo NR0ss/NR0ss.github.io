@@ -42,3 +42,7 @@ footer{
 .button-link{
 	font-weight:900; width:254px
 }
+
+.open-topic{
+	cursor:pointer
+}
