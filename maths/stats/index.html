@@ -40,7 +40,7 @@
 
     <body>
 		
-		<nav class="w3-sidebar w3-bar-block w3-card w3-animate-left w3-center" style="display:none" id="mySidebar">
+		<nav class="w3-sidebar w3-bar-block w3-card w3-animate-left w3-center side-navigation-close" id="mySidebar">
 			<h1 class="w3-xxxlarge w3-text-theme">Side Navigation</h1>
 			<a href="../../" class="w3-bar-item w3-button">Main Page</a>
 			<a href="../" class="w3-bar-item w3-button">Maths</a>
@@ -56,13 +56,13 @@
 				<h1 class="w3-xxxlarge">A Level Statistics</h1>
 				<div class="w3-padding-8">
 					<a href="https://filestore.aqa.org.uk/resources/mathematics/AQA-AS-A-MATHS-FORMULAE.PDF" target="_blank">
-					<button class="w3-btn w3-xlarge w3-dark-grey w3-hover-light-grey" style="font-weight:900;width:254px">Formula Booklet</button>
+					<button class="w3-btn w3-xlarge w3-dark-grey w3-hover-light-grey button-link">Formula Booklet</button>
 					</a>
 				</div>
 						
 				<div class="w3-padding-16">
 					<a href="https://filestore.aqa.org.uk/resources/mathematics/specifications/AQA-7357-SP-2017.PDF" target="_blank">
-						<button class="w3-btn w3-xlarge w3-dark-grey w3-hover-light-grey" style="font-weight:900;width:254px" >View Spec</button>
+						<button class="w3-btn w3-xlarge w3-dark-grey w3-hover-light-grey button-link">View Spec</button>
 					</a>
 				</div>	
 			</div>
@@ -80,10 +80,10 @@
 		<footer class="w3-container w3-theme w3-padding-64">
             <div class="w3-center">	
 				<a href="../">
-					<button class="w3-btn w3-xlarge w3-dark-grey w3-hover-light-grey" style="font-weight:900;width:254px">Go Back</button>
+					<button class="w3-btn w3-xlarge w3-dark-grey w3-hover-light-grey button-link">Go Back</button>
 				</a><div class="mobile_device_550px"><p></p></div>
 				<a href="https://www.nrteach.com">
-					<button class="w3-btn w3-xlarge w3-dark-grey w3-hover-light-grey" style="font-weight:900;width:254px">Main Page</button>
+					<button class="w3-btn w3-xlarge w3-dark-grey w3-hover-light-grey button-link">Main Page</button>
 				</a>				
 			</div>
 			
@@ -94,16 +94,14 @@
 
         <script>
 				// Side navigation
-				function w3_open() {
-				  var x = document.getElementById("mySidebar");
-				  x.style.width = "100%";
-				  x.style.fontSize = "40px";
-				  x.style.paddingTop = "10%";
-				  x.style.display = "block";
-				}
-				function w3_close() {
-				  document.getElementById("mySidebar").style.display = "none";
-				}
+			function w3_open() {
+				var x = document.getElementById("mySidebar");
+				x.className = x.className.replace(" side-navigation-close", " side-navigation-open");
+            }
+            function w3_close() {
+				var x = document.getElementById("mySidebar");
+				x.className = x.className.replace(" side-navigation-open", " side-navigation-close");
+            }
 		</script>
 
 	</body>
