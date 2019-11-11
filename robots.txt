@@ -1,0 +1,4 @@
+User-agent: *
+Disallow: /physics/Topics.html
+Disallow: /physics/functions.js
+Disallow: /stylesheet.css
