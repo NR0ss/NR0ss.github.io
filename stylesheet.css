@@ -46,3 +46,11 @@ footer{
 .open-topic{
 	cursor:pointer
 }
+
+.side-navigation-open{
+	display: block; width: 100%; font-size: 40px; padding-top: 10%
+}
+
+.side-navigation-close{
+	display:none
+}
