@@ -5,4 +5,6 @@ Disallow: /stylesheet.css
 Disallow: /stylesheetFont.css
 Disallow: /stylesheetW3.css
 Disallow: /stylesheetW3Theme.css
-Sitemap: /sitemap.xml
+Allow: /
+Allow: /sitemap.htm
+Sitemap: http://www.nrteach.com/sitemap.xml

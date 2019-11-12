@@ -1,47 +1,27 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<urlset
-      xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
-      xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-      xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9
-            http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
-<!-- created with Free Online Sitemap Generator www.xml-sitemaps.com -->
-
-
-<url>
-  <loc>https://www.nrteach.com/</loc>
-  <lastmod>2019-11-12T18:05:52+00:00</lastmod>
-  <priority>1.00</priority>
-</url>
-<url>
-  <loc>https://www.nrteach.com/physics/</loc>
-  <lastmod>2019-11-12T18:05:52+00:00</lastmod>
-  <priority>0.80</priority>
-</url>
-<url>
-  <loc>https://www.nrteach.com/maths/</loc>
-  <lastmod>2019-11-12T18:05:52+00:00</lastmod>
-  <priority>0.80</priority>
-</url>
-<url>
-  <loc>https://www.nrteach.com/comsci/</loc>
-  <lastmod>2019-11-12T18:05:52+00:00</lastmod>
-  <priority>0.80</priority>
-</url>
-<url>
-  <loc>https://www.nrteach.com/maths/pure/</loc>
-  <lastmod>2019-11-12T18:05:52+00:00</lastmod>
-  <priority>0.64</priority>
-</url>
-<url>
-  <loc>https://www.nrteach.com/maths/mechanics/</loc>
-  <lastmod>2019-11-12T18:05:52+00:00</lastmod>
-  <priority>0.64</priority>
-</url>
-<url>
-  <loc>https://www.nrteach.com/maths/stats/</loc>
-  <lastmod>2019-11-12T18:05:52+00:00</lastmod>
-  <priority>0.64</priority>
-</url>
-
-
+<?xml version="1.0" encoding="utf-8"?>
+<!--Created using XmlSitemapGenerator.org - Free HTML, RSS and XML sitemap generator-->
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9 http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
+  <url>
+    <loc>http://www.nrteach.com/</loc>
+  </url>
+  <url>
+    <loc>http://www.nrteach.com/maths/</loc>
+  </url>
+  <url>
+    <loc>http://www.nrteach.com/physics/</loc>
+  </url>
+  <url>
+    <loc>http://www.nrteach.com/maths/mechanics/</loc>
+  </url>
+  <url>
+    <loc>http://www.nrteach.com/maths/pure/</loc>
+  </url>
+  <url>
+    <loc>http://www.nrteach.com/maths/stats/</loc>
+  </url>
+  <url>
+    <loc>http://www.nrteach.com/comsci/</loc>
+  </url>
 </urlset>
+<!--<guid value="4322d163-2fc8-4119-a482-b121d500b683" />-->
+<!--Created using XmlSitemapGenerator.org - Free HTML, RSS and XML sitemap generator-->
