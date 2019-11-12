@@ -2,3 +2,7 @@ User-agent: *
 Disallow: /physics/Topics.html
 Disallow: /physics/functions.js
 Disallow: /stylesheet.css
+Disallow: /stylesheetFont.css
+Disallow: /stylesheetW3.css
+Disallow: /stylesheetW3Theme.css
+Disallow: /sitemap.xml
