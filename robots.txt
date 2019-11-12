@@ -5,5 +5,4 @@ Disallow: /stylesheet.css
 Disallow: /stylesheetFont.css
 Disallow: /stylesheetW3.css
 Disallow: /stylesheetW3Theme.css
-Allow: /sitemap.xml
 Sitemap: /sitemap.xml
