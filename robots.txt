@@ -5,6 +5,8 @@ Disallow: /stylesheet.css
 Disallow: /stylesheetFont.css
 Disallow: /stylesheetW3.css
 Disallow: /stylesheetW3Theme.css
+Disallow: /comsci/functions.js
+Disallow: /comsci/Topics.html
 Allow: /
 Allow: /sitemap.htm
 Sitemap: http://www.nrteach.com/sitemap.xml

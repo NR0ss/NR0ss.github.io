@@ -29,7 +29,7 @@
 		<link rel="stylesheet" href="../stylesheetW3.css">
 		<link rel="stylesheet" href="../stylesheetFont.css">
 		<link rel="stylesheet" href="../stylesheet.css">
-		
+		<script src="functions.js"></script>
 		<style>
 		body {
 		background-color: #009688;
@@ -64,7 +64,20 @@
 			</h2>
 		</div>
 
-
+		<a class="open-topic" onclick="loadTopic('topic_hardware','openHardware','Hardware');myAccFunc('Hardware')" id="openHardware">
+			<div class="w3-row w3-border button">
+				<div class="w3-full w3-container w3-white w3-border w3-hover-light-grey">
+                    <div class="w3-center">
+                        <h3>Hardware and Software</h3>
+                        <p>Application and System software</p>
+                        <p>Role of an operating system</p>
+                    </div>
+				</div>
+			</div>
+		</a>
+		<div id="Hardware" class="w3-hide">
+			
+        </div>
 
 
 		<footer class="w3-container w3-theme w3-padding-64">
@@ -80,6 +93,17 @@
 			
         </footer>
 
+
+		<script>
+			function myAccFunc(id) {
+				var x = document.getElementById(id);
+				if (x.className.indexOf("w3-show") == -1) {
+					x.className += " w3-show";
+				} else { 
+					x.className = x.className.replace(" w3-show", "");
+				}
+			}
+		</script>
 
 
     </body>
