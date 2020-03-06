@@ -1,0 +1,104 @@
+﻿Specific charge = charge / mass
+
+
+Minimum energy for pair production is 2 lots of the rest energy
+
+
+Threshold frequency = work function / h
+
+
+e x Vs = max kinetic, e is the charge of an electron and Vs is the stopping potential
+
+
+Wave speed = distance / time
+
+
+μ = M / L,         mass per unit length = mass of string / length 
+
+
+Tension in investigating resonant frequency = mg,                m is the mass of the objects pulling on the string
+
+
+Constructive interference occurs when the path difference is nλ
+
+
+Destructive interference occurs when the path difference is (n + ½)λ
+
+
+In double slit, sin(theta) = path difference / slit seperation
+
+
+In double slit, tan(theta) = fringe spacing / Distance between slit and screen
+
+
+Weight = mg
+
+
+Momentum = mass x velocity
+
+
+Impulse = change in momentum
+
+
+Extension = new length - original length
+
+
+Energy per unit volume = ½ x stress x strain
+
+
+Energy = (current) x (potential difference) x (time) = (curent)2 x (resistance) x (time)
+
+
+Angular speed = (angle object turns through) / time
+
+
+Kelvin = (degrees celsius) + 273
+
+
+pV = constant,                p is pressure and v is Volume (only valid if temperature is constant)
+
+
+V / T = constant,        V is volume and T is temperature (only valid if pressure is constant)
+
+
+p / T = constant,        p is pressure and T is temperature (only valid if volume is constant)
+
+
+Work done = pressure x (change in volume)
+
+
+(time period of orbit)2 is directly proportional to (radius)3
+
+
+Escape velocity = square root of (2GM / r),        G = gravitational constant, M = mass of planet
+
+
+For capacitor charging, V = V0(1 - e-t / RC)
+
+
+For capacitor charging, I = I0e-t / RC
+
+
+For capacitor discharging (decay), V = V0e-t / RC
+
+
+For capacitor discharging (decay), I0(1 - e-t / RC) ask about this as I’m not sure
+
+
+N = nNA,        N is number of atoms, NA is avogadro constant, n is the the number of moles
+
+
+A = A0e-λt,        A is the activity, A0 is the activity at t = 0
+
+
+Average binding energy per nucleon = binding energy / nucleon number
+
+
+1/ f = 1/u + 1/v,        f is focal length, u is the object to lens, v is lens to image
+(if v is negative then it is a virtual image)
+
+
+Collecting power is directly proportional to (dish diameter)2
+
+
+Intensity = power / (4 x pi x d2),        d is the distance from star
